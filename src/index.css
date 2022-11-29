@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.dashboard {
+  height: 600px;
+  width: 950px;
+  margin: 20px;
+  text-align: center;
+
+  display: grid;
+  grid-gap: 50px;
+  grid-template-rows: repeat(2, 275px);
+  grid-template-columns: repeat(4, 200px);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.review{
+  height: 250px;
+  width: 200px;
+  background-color: #4682B4;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.rating{
+  height: 250px;
+  width: 200px;
+  background-color: #4682B4;
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.analysis {
+  height: 250px;
+  width: 200px;
+  background-color: #4682B4;
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.analysis-num {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.sidebar {
+  background-color: #4682B4;
+  width: 200px;
+  height: 600px;
+  grid-row: 1/2;
+  grid-column: 1;
+}
+
+.list {
+  margin: 175px 40px;
+  line-height: 30px;
+  
+}
+
+.visitors {
+  height: 275px;
+  width: 700px;
+  background-color: #4682B4;
+  grid-row: 2;
+  grid-column: 2/4;
+}
+
+.insidesquare {
+  height: 130px;
+  width: 600px;
+  margin: auto;
+  background-color: #87CEEB;
 }
